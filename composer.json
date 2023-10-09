@@ -1,0 +1,21 @@
+{
+    "name": "baharsah/livepay",
+    "description": "Payment Gateway Wrapper for PHP",
+    "type": "library",
+    "require-dev": {
+        "phpunit/phpunit": "^10.4",
+        "codeigniter4/framework": "^4.4"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Baharsah\\Livepay\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Baharsah",
+            "email": "me@baharsah.my.id"
+        }
+    ]
+}
