@@ -15,7 +15,7 @@ class StatementIssue {
         try {
 
         }catch(\Exception $e) {
-            throw new StatementException(Config::$lang::$lang["Exception"]["ReimbursementException"] , $e->getCode() , $e->getPrevious()) ;
+            throw new StatementException(Config::$lang::$lang["Statement"]["Exception"] , $e->getCode() , $e->getPrevious()) ;
         }
 
         
