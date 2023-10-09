@@ -14,6 +14,9 @@ class StatementIssue {
 
         try {
 
+            $statement = new($config::$pluginList[$config::$plugin]["statement"]); 
+            
+
         }catch(\Exception $e) {
             throw new StatementException(Config::$lang::$lang["Statement"]["Exception"] , $e->getCode() , $e->getPrevious()) ;
         }

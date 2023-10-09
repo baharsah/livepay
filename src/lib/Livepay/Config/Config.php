@@ -8,12 +8,14 @@ use Livepay\I18n\I18n;
 
 class Config
 {
+    /** @var array $pluginList List Integrateable Plugin */
+    public static $pluginList = ["midtrans" => [ "statement" => \Midtrans\CoreApi::class ] ];
 
-    /** @var string $plugin Plugin Class definitor ; if null, using dummy.
+    /** @var string $plugin Plugin Class definitor.
      * 
      * @static
      */
-    public static $plugin = null;
+    public static $plugin = "midtrans";
     /** @var string $serverkey Serverkey.
      * 
      * @static
