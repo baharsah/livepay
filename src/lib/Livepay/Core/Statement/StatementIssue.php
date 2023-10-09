@@ -13,8 +13,10 @@ class StatementIssue {
     public function __construct(Config $config){
 
         try {
-
-            $statement = new($config::$pluginList[$config::$plugin]["statement"]); 
+            $confClass = $config::$pluginList[$config::$plugin]["config"];
+            $confObject = new($confClass($config));
+            $statementClass = $config::$pluginList[$config::$plugin]["statement"];
+            // $statementObject = new $statementClass() 
             
 
         }catch(\Exception $e) {
